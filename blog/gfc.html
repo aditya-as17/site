@@ -1,0 +1,627 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>How Global Financial Crisis changed the world</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="c44dcae4-767d-434b-a18b-bdb25f357a98" class="page sans"><header><h1 class="page-title"><span style="border-bottom:0.05em solid">How Global Financial Crisis changed the world</span></h1><table class="properties"><tbody></tbody></table></header><div class="page-body"><p id="9912bb2c-a4c5-4e05-bcbb-b0bdd2dd5838" class="">When 2008 meltdown happened, right from the Queen of England to govt heads, criticized macroeconomists as they failed to predict the meltdown. It is thought to be their job to keep the economy at large stable and warn about the disasters so the govt can have adequate systems in place to prevent another 1929 depression from happening. </p><p id="0108c982-12a8-4dd5-83fe-a8fe10334071" class="">They were unclear why they are being blamed as the ’08 Global Financial crisis happened due to shenanigans of investment bankers and credit rating agencies. Bankers invented Collateralized Debt Obligations, credit rating agencies cheated while grading the CDOs. And when the bubble burst, it spread to other sectors across US, Europe and rest of the world due to their exposure to US financial markets. Federal Reserve was literally sleeping throughout all this and when this sub-prime mortgage crisis snowballed into a depression, fault of bankers was offloaded to economists. </p><p id="48f3f72d-45e0-4239-bb67-8d1eb6d32ac8" class="">Something which is a clear case of human greed, regulatory laxity, why it is studied in economics as if some wrong models have to be corrected. Or were they right in blaming macroeconomists as for long banks and financial institutions have not been given much importance but only real variables like output, employment, technology. So the spreading of sub-prime crisis to other sectors of economy could not have been predicted due to incomplete existing models, making economists guilty as charged.</p><p id="ac6b3db3-fce8-49a3-b670-723382f20ccc" class="">This essay traces the origin, causes, effects, explanation of the GFC, why economists were not able to detect it, what were its macroeconomic policy implications, changes after GFC along with measures in place to mitigate future possibilities of risks similar to it.</p><h1 id="e7be520a-e6c6-42d2-9dba-424182709475" class="">Causes and origin of GFC</h1><p id="7d12c71b-fcf4-40d5-afb3-228ff5513b40" class="">The roots of sub-prime lending lies in the <strong>dot-com crash of 2000s</strong>. After the crash, no one wanted to even hear about tech companies for they had lost over 1.7 trillion dollars<a href="about:blank#fn5">5</a> of investors. Then came 9/11, Enron accounting fraud scandal, World-com accounting scandal making stock market a gloomy place. Investors found decent returns in real estate. US Govt encouragement of home ownership made them bullish over housing sector. After 9/11 there was excess liquidity in the system by the operations of Fed to stimulate the economy. Lenders went on a lending spree on account of them being full with cash. Investment banks, Hedge funds jumped to cash in on this opportunity because nothing much was happening in the stock market.</p><p id="ecd5a93b-c877-4044-a152-acaa0d51707b" class="">When credit worthy customers were not enough, they started taking risks by lending to customers with poor credit worthiness because the banks were overflowing with cash. Banks took on great risks. They started approving NINJA<a href="about:blank#fn6">6</a> loans which formed sub-prime mortgages. These mortgages were consolidated in a package of marketable securities or MBS. Excess consumer demand drove the housing bubble to dangerous levels by the summer of ’05 and when the bubble burst, US economy came to a standstill with tremors being felt worldwide especially Europe due to their exposure to American banks.</p><h2 id="bdd845a2-bad2-4369-ae89-d987820b3042" class="">Main Culprits and Responsible parties</h2><ol id="9d457a82-59f2-4ed1-b9b5-5487bc3d4954" class="numbered-list" start="1"><li><strong>Banks</strong> – They are accused as the biggest culprits as they issued loans to people without credit worthiness. Reasons were – high liquidity in the market lowered interest rates so to cash more profit they took high risk. Also, the economy was healthy, people were paying their mortgages and interest rates were low so it did not seem that big a risk.</li></ol><ol id="ced8cc85-011d-4ec6-8bb2-9f09fd4826c6" class="numbered-list" start="2"><li><strong>Homebuyers –</strong> They took multiple mortgages, bought houses they could barely afford, loan to pay off previous loan, paying off only interest over the loan so when things went awry, it ate up all their savings and bankrupted them.</li></ol><ol id="627355e7-5773-4606-8951-1bd261f5c2fd" class="numbered-list" start="3"><li><strong>Fannie May (FNMA) and Freddie Mac (FHLMC)</strong> – These were the semi-government agencies made to have more capital available for investment. They purchased many subprime loans in the form of MBS and since they were backed by Govt, it sent the wrong signal that US federal Govt has guarantee of these loans which drove the demand of securitized subprime loans even higher.</li></ol><ol id="894bb942-58ac-4524-9e23-7e9a962f6986" class="numbered-list" start="4"><li><strong>Investment Banks –</strong> They sold up the mortgage in the secondary market instead of holding up to it, freeing up more capital to be lent thus lenders could approve more risky loans.</li></ol><ol id="6ddde9c7-6c0b-455e-b3de-e787cba7487e" class="numbered-list" start="5"><li><strong>Rating Agencies –</strong> They acted in bad faith by rating junk category CDOs as AAA or AA. It has been pointed out they risked losing business if not rated favourably as creator of securities would have walked to other agency. Thus, not possible for them to give an unbiased assessment due to conflict of interest. Classic Prisoner’s dilemma.</li></ol><ol id="7308a3a4-ff75-461d-98ee-7ffb4f5c8bb2" class="numbered-list" start="6"><li><strong>Hedge Funds –</strong> This scale of the bubble could not have been possible without the involvement of hedge funds. They purchased subprime loans on credit and hedged their position using Credit Default Swaps (look footnotes). Since hedge funds can leverage in high proportion to their capital, it further inflated the bubble.</li></ol><h1 id="6276d33d-ebc1-4b76-83dc-28ba731c6421" class="">Effect of sub-prime mortgage crisis</h1><h2 id="2a8ca812-3880-4430-b8e9-934263e8e0f0" class="">On US</h2><p id="b4ba9f4f-4f35-4e3d-81db-b8e576734cb0" class="">When the crisis unfolded, lenders tightened their grip on credit, high foreclosure instances forced homeowners to get evicted. People had tough time making ends meet as all their savings evaporated in this mess. More than one-third increase in consumption from 2000 - 2007 was because of US consumers. Several businesses shut shops. Household wealth decreased by $14.4 T by end of first quarter of 2009. Lehman Brothers filed for bankruptcy in September 2008. Merrill Lynch was merged with Bank of America and AIG was bailed out by the govt for $180 Billion and US govt assumed control of it. U.S. unemployment rate peaked at 10.0% in October 2009, the highest rate since 1983 and roughly twice the pre-crisis rate. The average hours per work week declined to 33, the lowest level since the government began collecting the data in 1964.</p><h2 id="8ce90ab7-630f-4cc3-8d3c-47863942ec0f" class="">On Europe</h2><p id="3f05aa28-a109-4b8a-9a48-4145a77dd4fa" class="">Eurozone already had problems which got accentuated by the recession in US. The root of the recession is the Balance of Payment crisis where foreign capital infusion was stopped. In that case, generally a country would devalue its currency. But it was not possible in European Central bank due to conflicting interests of member nations. Thus, the already grim situation of southern states viz. Spain, Greece, Cyprus, Portugal etc worsened. Iceland was the worst affected nation. Icelandic banks were almost 10 times the GDP of Iceland thus could never be bailed out. 97% of the banking sector collapsed in a matter of three days. 80% of the stock market was wiped out overnight. Shareholders were badly hurt. About every other business in Iceland became technically bankrupt.</p><h2 id="b57cb84b-f265-4555-a5ef-e437140f5fc0" class="">On India and rest of the world</h2><p id="17a6a865-4789-45d0-bdc9-44ef5646627f" class="">US consumers accounted for more than 1/3rd increase in global consumption between 2000 and 2007. So many developing nations including India were dependent on US consumption. When their consumption dropped, other nation’s economy esp African and island nations, started faltering.</p><p id="cc4e0ad9-8177-44a3-8086-f4a58f60a04d" class="">The current problems that we see in Indian economy like the <strong>Twin Balance Sheet (look footnotes)</strong> problem had its genesis in GFC. 2000-07 was the golden period for Indian exports. India’s largest export destination was US where export increased from $42 Billionto $145 Billion(total 13% trade volume). Since corporates were making profits so banks were on a lending spree. No one thought anything could go wrong. Our GDP growth was reaching 7-8% a year. Banks did not want to miss the train to profit so in lending they threw caution to the wind. Then came GFC and our exports came to a stand-still.</p><p id="53c798ff-fe38-49f5-bf74-63fef6452af2" class="">Question may arise, then why we registered 7.9 % and 8.5% GDP growth in the years 2009-10 and 2010-11 if our businesses were badly hurt by GFC.</p><p id="0d6867de-1e58-4926-8b52-f8cacea663ba" class="">According to Arvind Subramanian and Josh Felman (2019), despite <em>Investment</em> being low and <em>Net exports</em> hurt, it was consumption and Govt expenditure that propped up the demand and sustained the growth.</p><p id="a15e5e05-e29d-4cfb-99ad-a2ab188fb16b" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>D</mi><mi>P</mi><mtext> </mtext><mo>=</mo><mtext> </mtext><mi>C</mi><mi>o</mi><mi>n</mi><mi>s</mi><mi>u</mi><mi>m</mi><mi>p</mi><mi>t</mi><mi>i</mi><mi>o</mi><mi>n</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>G</mi><mi>o</mi><mi>v</mi><mi>t</mi><mi>e</mi><mi>x</mi><mi>p</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>I</mi><mi>n</mi><mi>v</mi><mi>e</mi><mi>s</mi><mi>t</mi><mi>m</mi><mi>e</mi><mi>n</mi><mi>t</mi><mtext> </mtext><mo>+</mo><mtext> </mtext><mi>N</mi><mi>e</mi><mi>t</mi><mtext> </mtext><mi>E</mi><mi>x</mi><mi>p</mi><mi>o</mi><mi>r</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">GDP = Consumption + Govtexp + Investment + Net Export</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">G</span><span class="mord mathdefault" style="margin-right:0.02778em;">D</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="mord"> </span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord"> </span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">o</span><span class="mord mathdefault">n</span><span class="mord mathdefault">s</span><span class="mord mathdefault">u</span><span class="mord mathdefault">m</span><span class="mord mathdefault">p</span><span class="mord mathdefault">t</span><span class="mord mathdefault">i</span><span class="mord mathdefault">o</span><span class="mord mathdefault">n</span><span class="mord"> </span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord"> </span><span class="mord mathdefault">G</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault">x</span><span class="mord mathdefault">p</span><span class="mord"> </span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord"> </span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">e</span><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span><span class="mord mathdefault">m</span><span class="mord mathdefault">e</span><span class="mord mathdefault">n</span><span class="mord mathdefault">t</span><span class="mord"> </span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord"> </span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mord mathdefault">e</span><span class="mord mathdefault">t</span><span class="mord"> </span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mord mathdefault">x</span><span class="mord mathdefault">p</span><span class="mord mathdefault">o</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">t</span></span></span></span></span><span>﻿</span></span></p><p id="8ced8937-36ed-4307-87ab-91d7cc902307" class="">But the problem of NPA still remained where it was. Banks went on lending more in a bid to ramp up the business and recover their loan. The problem was out in the public only when RBI forced the banks to start declaring its NPA from 2015 onwards.</p><p id="2b6a83ff-9615-4219-b632-9b2eb54222cf" class="">So, this is how GFC affected India. China too, was hit badly as its exports plunged. However their massive investment in infrastructure taking a loan of $ 580 billion made their GDP grow over 9%.</p><h1 id="08be7c8b-c0d1-4332-b491-13185ec1edd1" class="">Reasons for non-detection by Economists</h1><p id="62492a40-08b5-4d6a-87ce-5b0878d83439" class="">This is half-truth at best that Economists were unable to predict the crisis. In fact, due to their efforts, 1929 like situation were averted. Raghuram Rajan ,the ex-RBI governor, had predicted the crisis in 2005. Robert Shiller, Peter Schiff, Steve Keen, Jens Kejar Sørenson etc. among others are credited for predicting the crisis.</p><p id="43b5f42e-b189-48d1-8524-96be9964f6e9" class="">Options trader Nassim Nicholas Taleb, author of the book ‘The Black Swan’ spent years warning against the breakdown of the banking system in particular and the economy in general owing to their use of and reliance on bad risk models and reliance on forecasting.</p><p id="4e5e9ccf-8bb5-46a8-a89f-da827b9e2a87" class="">So if they knew about it, why there was no consensus among the economists so that the policy makers could have taken concrete actions to protect it.</p><p id="9a901f7f-2de0-488b-be8d-94d1e388baa2" class="">In macroeconomic models, be it <em>Circular flow of Income</em> or <em>IS-LM,</em> banks and financial institutions are just a part of the model that mobilize savings of individuals to firms and work as a vehicle for the central bank to apply monetary policies. They do not have independent position inside the model to make system unstable on its own. The past years of research and experience backed this thing.</p><p id="af6f3671-4a87-4634-a134-55152016201b" class="">But, unlike the depression of 1929 where banks just showed the effects, here in 2008, they were very much the cause. They encouraged excessive borrowing among potential home owners thus exposing themselves to high risk of default. They created risky products like CDO which later had a domino effect on the whole economy and had amassed huge positions in Mortgage- backed securities and Credit Default swaps. It became the cause of bankruptcy for Lehman Brothers, Merrill Lynch and AIG.</p><p id="dffa6b00-f5ce-48e2-927c-f08694b92637" class="">In the paper ‘The Financial Crisis and the Systemic Failure of Academic Economics’ aka Dahlem Report, eight European and American economists argued that there has always been a disconnect between mathematical models of economics and real world situation. Models assume that the markets and economies are inherently stable and market participants, all behave rationally at all times which clearly was absent here. Else people would not have taken the mortgages they could not afford, bankers would not have issued NINJA loans, investment banks and hedge funds would never have hold huge positions in the housing market instruments because they always diversify to protect the capital.</p><p id="4643671c-40ec-4f3e-9791-f43c39828beb" class="">The authors of the ‘Dahlem Report’ argue that even if an individual behaves rationally, there is no guarantee that a large group of people will do that too. This is where the theories of psychology and sociology comes into play which, if incorporated in the economic models will make them more connected to real world.</p><h2 id="2661b9f1-d238-4e21-a853-21f997305899" class="">Disconnect between Finance and Economics</h2><p id="100da9f1-19ab-49a6-ac15-f81d6c3a8e5c" class="">There has been a disconnect of finance sector with macroeconomics thus in models it only plays a supporting role. Standard economics says that given people have enough money to spend, when there is a fall in price, demand increases and markets self-equilibrate. But, in the financial markets, when there is a price fall, investors sell. And this frenzy is further fed by momentum traders, portfolio managers with fixed goals (like pension fund managers). These processes normalize after some time but when collateral is low and lenders call for more margin in anticipation of fat profits, make the whole system very vulnerable.</p><p id="79ff73aa-00cd-4eaa-80bc-232ef9097415" class="">All this go against the fundamental principle of economics of things being at equilibrium. Apart from that, financial institutions were never big enough to do things on their own. Therefore there was no need felt by economists to include finance in macroeconomic models.</p><p id="126f55c5-2ce1-4dc5-bf3a-ce22c7f233c0" class="">But with technological advancement and innovation in financial products, they became a formidable force from the 1990s and ignoring finance had deleterious effects on the economic health for the world.</p><p id="769bf2c4-260f-4154-a4d1-329ecb3e3dcc" class="">Financial markets are unstable by default because your earnings are based on future that no one has seen and it is not a bad thing in itself. But given enough debt, it has the potential to wreck the whole economy like it happened in 2008. This has generated concerted effort on the regulators all over the world to reduce the amount of debt as they have abused the system with 30-to-1 debt to equity ratio before the crisis. It has become necessary due to our highly interconnected financial industry as crisis in one country quickly spreads to other countries and then to different sectors.</p><p id="01ce9b79-ca2c-4375-834b-8761e6550e23" class="">In the recent years, there have been efforts to <strong>build macroeconomic model which includes the financial sector as well</strong>. “A macroeconomic model with a financial sector”, paper by Markus Brunnermeier and Yuliy Sannikov is prominent in this area. George Soros, a hedge fund billionaire, launched <em>The Institute for New Economic Thinking</em> for research into financial market behaviour, the macroeconomic impact of income inequality among other issues.</p><h1 id="be1c5147-d531-448e-a1b7-72e62774cde3" class="">Macroeconomic changes after GFC</h1><ol id="4185c450-66e5-4572-b997-d91994e9ac3b" class="numbered-list" start="1"><li>Banks have become more resilient to shocks. BASEL III norms, introduced in 2010 increased tier 1 capital ratio from less than 4% to 10.5%. Global banks have reduced the extent of their trading activities as well to limit their exposure. However, in the present era of ultra-low interest rates, it has affected the overall profitability of the banks.</li></ol><ol id="f0f34aef-db03-4d53-927f-056d6fdbb121" class="numbered-list" start="2"><li>Central Banks have ignored the regulation of financial institutions since the great moderation in 1980s and focused solely on price stability which gave unfettered access to financial institutions to grow without necessary oversight. But after GFC, preserving systemic stability become one of the cornerstone of central bank policies. Thus, they tightened grip over them.</li></ol><ol id="c9dbee77-09f1-4da4-a495-a51e3c4c1b17" class="numbered-list" start="3"><li>Global debt has risen by $87 trillion since the GFC<a href="about:blank#fn12">12</a> due to increase in govt expenditures by Keynesian methods to revive the economies, provide the citizens a safety net in the face of different shocks like the crude oil supply chain disruption due to Arab spring in 2011 and most recently the corona virus outbreak in 2020.</li></ol><ol id="da2cf666-11d3-4d8e-993c-84354804f9be" class="numbered-list" start="4"><li>Interest rates have been hitting zero bounds due to increase in money supply for the revival of demand but it is making more and more difficult for monetary policy to have any impact.<ol id="a6396e6d-02c8-46a9-bf76-278e2ebd5d6e" class="numbered-list" start="1"><li>This near zero nominal interest rate had made economies more vulnerable against another shock. Say, if nominal interest rates and inflation were higher, it would have given more room for central banks but now they are only left with changing the long term interest rates by purchasing long term government bonds.</li></ol><ol id="49a832bb-3d41-4b35-950c-44e056fe576a" class="numbered-list" start="2"><li>Due to this reason, coronavirus could wreak havoc on global economy like that because problems were already present in the system</li></ol></li></ol><ol id="85532465-e6c8-4954-9fa9-5b1733b2cb85" class="numbered-list" start="5"><li>Since banks became conservative in their approach, corporate bond market soared as corporate lending by banks was almost flat. Developed economies have corporate debt in asset light sectors like healthcare, media on the other hand debt of developing economies is in real estate and other industrial sectors that are asset heavy so they have long gestation period before it start giving profits.<ol id="c088c220-f7d3-43df-b9db-5a80fef5089d" class="numbered-list" start="1"><li>And the annual maturity of bonds will burden $1.6 trillion to $2.1 trillion annually in between 2018 and 2022.</li></ol><ol id="fe7110f7-1cba-4f22-9518-243f25c3a4c9" class="numbered-list" start="2"><li>But the global corporate default rate has increased<a href="about:blank#fn13">13</a> to 2.1 % in 2016 from the long term average of 1.5% since 1981. If in case, interest rates soar due to govt expenditure, it can further increase defaults.</li></ol></li></ol><h1 id="b376b84c-e2db-4764-b342-0ca416b66fec" class="">Conclusion</h1><p id="95b44130-fb08-41c2-8f8b-99149a89375b" class="">Sub-prime mortgage crisis morphed into a full-blown global financial crisis only because the system already had defects as lending institutions operated without much oversight. It gave them an incentive to cheat the system because they knew no govt would let a behemoth worth hundreds of billions of dollars fail to avoid systemic risks (too big to fail) and will bail them out with taxpayers money if things go south, to save thousands of employees from losing their jobs. So fat bonuses if they get profits and no penalty if they lose. Therefore, they involved in such corrupt practices.</p><p id="f0bfed00-fd75-4695-a0be-879e0bb3ee27" class="">Southern countries of European Union were worst affected as they were already highly leveraged. Printing money was not an option for them and getting credit was tougher in the midst of the crisis where every country was spending heavily on their own economy. Germany was able to fight the recession better as it had budget surplus for quite a few years thus they could afford a higher govt spending.</p><p id="2bb3fd99-a815-48bf-a94b-7c1f9854e7fa" class="">As Winston Churchill said, “ Never let a good crisis go to waste.” It offered the countries chance to regulate and focus on areas that were neglected during ‘good times’. Now there is no free money for banks. Only systemically important entities are bailed out, that too comes with Govt equity and others have to manage on their own. Iceland was badly affected by the crisis so now it has diversified itself as a top cryptocurrency investment destination, in a bid to hedge the bets. China invested heavily in infrastructure by taking debt of around $580 billion and managed growth rate of 9% during the times where every country faced negative growth rates.</p><p id="09325353-ccfe-4709-83f2-bdde9bee7c71" class="">Now countries like Iceland, Slovenia, Zimbabwe, Venezuela are moving towards cryptocurrency as they have been burnt very badly by the traditional currency. And who knows in the event of another financial crisis, these countries come out strongly as cryptocurrency is not controlled by a particular central bank so they will have less effect of the traditional currency meltdown. Or they could again hit badly due to their volatility and since cryptocurrency is decentralized and mined by programmers, Govt cannot do much if things go awry.</p><p id="4c4bd393-6470-4c0c-b71d-22289d814b7b" class="">The bottom line is that no one can predict the crisis as anything could go wrong. However, when you have adequate firewalls in place, it cannot do much damage. Coronavirus crashed the worldwide economy and so as to revive, easing of monetary policy and fiscal stimulus were given by almost every country. But as we know, stimulus could work only if they are not already overburdened by debt and have enough liquidity already in the system.</p><p id="ee1f1862-56bb-4abb-b09a-466017aad9c1" class="">More research will give more information or better economic frameworks and models which can be used to mitigate crisis but it cannot stop it from happening in the first place. Our best bet is to remain open and cooperative in sharing knowledge so that another bubble cannot wreak havoc on the whole global economy.</p><hr id="096354d8-2f09-4dda-b467-37d65994d797"/><ol id="f180b714-7f3a-42af-a66c-8e4b5b42dc4a" class="numbered-list" start="1"><li>CDS or Credit Default Swap in which you insure your risk by paying a premium to other party. In case, your credit defaults, the payee will reimburse the payer.</li></ol><ol id="6f17f0a6-2ae6-477c-bcdf-e4fd8d1038b4" class="numbered-list" start="2"><li>Problematic balance sheet of Indian corporates created problems in the balance sheet of Indian banks esp PSB.</li></ol></div></article></body></html>
